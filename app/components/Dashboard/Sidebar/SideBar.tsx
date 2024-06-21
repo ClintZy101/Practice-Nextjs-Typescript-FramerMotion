@@ -61,12 +61,12 @@ export default function () {
             variants={containerVariants}
             initial="close"
             animate={containerControls}
-            className="bg-neutral-900 flex flex-col z-10 gap-20 p-5 absolute top-0 left-0 h-full shadow shadow-neutral-600">
+            className="bg-neutral-900 flex flex-col z-10 gap-20 p-5  top-0 left-0 h-full shadow shadow-neutral-600 sticky">
             <div className='flex flex-row w-full justify-between place-items-center'>
                 <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-full" />
                 <button
                     onClick={() => handleIsOpen()}
-                    className='p-1 rounded-full flex'
+                    className='p-1 rounded-full flex  hover:bg-neutral-700/30  transition ease-in-out delay-150 '
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ export default function () {
                         viewBox="0 0 24 24"
                         strokeWidth={1}
                         stroke="currentColor"
-                        className="w-8 h-8 stroke-neutral-200"
+                        className="w-8 h-8 stroke-neutral-200 "
                     >
                         <motion.path
                             strokeLinecap="round"
@@ -109,7 +109,7 @@ export default function () {
                     <UsersIcon className="stroke-inherit stroke-[0.75] min-w-8 w-8" />
                 </NavigationLink>
             </div>
-            
+
         </motion.nav>
     )
 }
