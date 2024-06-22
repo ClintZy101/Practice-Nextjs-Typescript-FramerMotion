@@ -1,7 +1,7 @@
 'use client'
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { SpanStatus } from 'next/dist/trace'
+
 
 export default function SplitTextArray({ text = "Text Here" }: { text: string | string[] }) {
     // 0.5 means half of the element is shown on screen

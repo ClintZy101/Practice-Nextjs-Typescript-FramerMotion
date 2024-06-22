@@ -7,6 +7,8 @@ import StaggeredText from "./components/StaggeredText/StaggeredText";
 import StaggerGrid from "./components/StaggerGrid/StaggerGrid";
 import SplitWords from "./components/StaggeredText/SplitWords";
 import SplitTextArray from "./components/StaggeredText/SplitTextArray";
+import WithAnimationControls from "./components/StaggeredText/WithAnimationControls";
+import RepeatAnimation from "./components/StaggeredText/RepeatAnimation";
 
 export default function Home() {
   return (
@@ -19,9 +21,10 @@ export default function Home() {
      <StaggeredTextContainer>
       {/* <BoldText text="TAYPOC" />
       <SplitWords text="Clinton Taypoc" /> */}
-      <SplitTextArray text={["Clint","Christine","Zephaniah"]} />
+      {/* <SplitTextArray text={["Clint","Christine","Zephaniah"]} /> */}
+      <WithAnimationControls text={["Clinton","Christine","Zephaniah"]} repeatDelay={3000} />
      </StaggeredTextContainer>
-   
+   <RepeatAnimation />
     </main>
   );
 }
