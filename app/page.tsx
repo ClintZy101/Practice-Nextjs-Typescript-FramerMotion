@@ -6,6 +6,7 @@ import StaggeredTextContainer from "./components/StaggeredText/StaggeredTextCont
 import StaggeredText from "./components/StaggeredText/StaggeredText";
 import StaggerGrid from "./components/StaggerGrid/StaggerGrid";
 import SplitWords from "./components/StaggeredText/SplitWords";
+import SplitTextArray from "./components/StaggeredText/SplitTextArray";
 
 export default function Home() {
   return (
@@ -16,10 +17,9 @@ export default function Home() {
      <StaggerGrid />
 
      <StaggeredTextContainer>
-      <div>
-      {/* <BoldText text="TAYPOC CLINTON" /> */}
-      <SplitWords text="Clinton Taypoc" />
-      </div>
+      {/* <BoldText text="TAYPOC" />
+      <SplitWords text="Clinton Taypoc" /> */}
+      <SplitTextArray text={["Clint","Christine","Zephaniah"]} />
      </StaggeredTextContainer>
    
     </main>
