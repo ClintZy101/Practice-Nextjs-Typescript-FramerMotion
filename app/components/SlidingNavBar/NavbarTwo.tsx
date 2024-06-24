@@ -17,10 +17,11 @@ const SlideTabs = () => {
         width: 0,
         opacity: 0
     })
+    const [isOpen, setIsOpen]=useState(false)
 
     return (
         <div className='flex border relative w-max  px-10 py-2 space-x-10 justify-center  rounded-full mx-auto items-center bg-white'>
-            <Tab setPosition ={setPosition}>Home</Tab>
+            <Tab setPosition ={setPosition} >Home</Tab>
             <Tab setPosition ={setPosition}>Blog</Tab>
             <Tab setPosition ={setPosition}>Store</Tab>
             <Tab setPosition ={setPosition}>Cart</Tab>

@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 import { motion, useInView, useAnimationControls } from 'framer-motion';
 
 
-export default function WithAnimationControls({ text = "Text Here", repeatDelay=1000 }: { text: string | string[], repeatDelay: number }) {
+export default function WithAnimationControls({ text = "Text Here", repeatDelay=1000, name }: { text: string | string[], repeatDelay: number, name?: string }) {
 
     const textArray = Array.isArray(text) ? text : [text];
     const ref = useRef(null)
