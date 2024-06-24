@@ -1,7 +1,12 @@
-import React from 'react'
+'use client'
 
-export default function page() {
+import { useParams } from 'next/navigation'
+
+
+export default function ProfileIDPostID() {
+  const params = useParams()
+  console.log('post params:', params)
   return (
-    <div>page</div>
+    <div>ProfileIDPostID: {params.postID}</div>
   )
 }
